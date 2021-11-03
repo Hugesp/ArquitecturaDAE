@@ -1,0 +1,380 @@
+/* Corporate Design Architecture and Engineering */
+/* Autor:Hugo Espinoza */
+
+.navbar-default{    
+    background-color: rgba(139, 139, 145,0.5) !important;        
+}
+
+.navbar-default ul li a{        
+    color: white !important;         
+    text-transform: uppercase;                  
+}
+
+.navbar-default ul li a i{        
+    color: black !important;         
+    margin-right: 2px;
+}
+
+
+.navbar-default ul li a:hover{   
+    background-color: rgba(47, 109, 150, 0.5) !important;     
+}
+
+.navbar-header a img{        
+    width: 90%;            
+}
+
+.navbar-brand{
+    padding: 0;
+}
+
+.tSlow{
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;   
+}
+
+.rounded-circle{
+    width: 250px;
+    height: 250px;
+    clip-path: polygon(50% 0%,100% 50%, 50% 100%,0% 50%);    
+}
+
+.rounded-circle:hover{    
+    clip-path: polygon(100% 0%,100% 100%, 0% 100%,0% 0%);
+}
+
+#slider{
+    backface-visibility: hidden;
+    clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+    width: 100% !important;
+    }
+
+.main-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--base-bg-color);
+}
+
+.center{
+    text-align: center;
+    margin: 0px auto;
+}
+
+/* :root {
+    --base-bg-color:#060A0f;
+    --sec-bg-color:#494949;
+    --outline-bg-color:rgb(8, 54, 169);;    
+  }
+
+
+a{
+    margin: 0px;
+    padding: 0px;
+}
+
+a:hover{         
+    color: var(--outline-bg-color);
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--base-bg-color);
+}
+p{
+    color: var(--sec-bg-color);
+}
+
+.tSlow{
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;   
+}
+
+.pad_100{
+    padding: 100px 0px;
+}
+.center{
+    text-align: center;
+    margin: 0px auto;
+}
+.menu_bar{
+    display: none;
+}
+.logo{
+    position: relative;
+}
+header{
+    width: 100%;
+    margin: 0px auto;
+    background-color: rgba(139, 139, 145,0.5);    
+    padding: 0px 0px;    
+    position: fixed !important;
+    border-bottom: 1px solid transparent;
+    z-index: 100; 
+}
+.main-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--base-bg-color);
+}
+
+.rounded-circle{
+    width: 250px;
+    height: 250px;
+    clip-path: polygon(50% 0%,100% 50%, 50% 100%,0% 50%);    
+}
+
+.rounded-circle:hover{    
+    clip-path: polygon(100% 0%,100% 100%, 0% 100%,0% 0%);
+}
+
+input,select,option,textarea{
+    width: 100%;
+    padding: 10px 15px;
+    border: 5px 0px;
+    opacity: .5;
+
+}
+
+input,select,option,textarea:hover:focus{
+    opacity: 1;
+    color: var(--base-bg-color);    
+}
+
+textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 250px;
+}
+
+button{
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 1px solid var(--base-bg-color);
+    padding: 10px 20px;
+    margin: 5px 0px;
+    color: var(--base-bg-color);
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    opacity: .7;
+}
+
+button:hover{
+    opacity: 1;
+    background-color: var(--base-bg-color);
+    color: white;
+}
+
+.black{
+    background-color: var(--base-bg-color);
+    opacity: 1;
+    color: white;
+}
+
+.black:hover{
+    background-color: var(--outline-bg-color);
+    border: 1px solid var(--outline-bg-color);
+}
+header{
+    padding: 0px 0px;
+    width: 100%;
+}
+.menu_container{
+    padding:0;
+    margin: 0;
+}
+
+header nav{
+    width: 100%;
+    margin: 0px auto;
+    background-color: rgba(139, 139, 145,0.5);    
+    padding: 0px 0px;    
+    position: fixed !important;
+    border-bottom: 1px solid transparent;
+    z-index: 100;    
+}
+
+header nav:hover{
+    background-color: rgba(139, 139, 145,0.8);           
+}
+
+header nav:hover img{
+    width: 80%;    
+}
+
+
+header nav ul li a:hover{   
+    background-color: rgba(27, 79, 114, .5);     
+}
+
+header img{        
+    width: 80%;    
+    z-index: 101;     
+}
+
+header nav ul{
+    margin: 0px;    
+    text-align: right;                    
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+header nav ul .link-active a{
+    color: var(--base-bg-color) !important;
+}
+
+header nav ul .link-active a::after{
+    width: 100%;
+    background-color: var(--base-bg-color);
+}
+
+header nav div ul li a{
+    padding: 15px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white !important;            
+}
+
+header nav div ul li a::before{
+    content: "";
+    position: absolute;     
+    width: 100%;
+    background-color: transparent;
+    height: 1px;         
+}
+
+header nav div ul li a::after{
+    content: "";
+    position: absolute; 
+    top: 100%;    
+    left: 0px;
+    width: 0%;
+    background-color: transparent;
+    height: 1px;     
+}
+
+header nav div ul li a:hover{    
+    text-decoration: none;   
+    color: var(--base-bg-color);
+}
+
+header nav div ul li a:hover::before{
+    width: 0%;
+    background-color: var(--base-bg-color);    
+}
+
+header nav div ul li a:hover::after{
+    width: 100%;
+    background-color: var(--base-bg-color);    
+}
+
+
+#slider{
+backface-visibility: hidden;
+clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+}
+
+#slippry{
+    position: relative;
+}
+
+#slippry h1,h2,h3,h4,h5,h6,p,a,button,small,span{
+    position: absolute;
+}
+
+
+#slippry p{
+    width: 600px;
+}
+
+#slippry .white_bg{
+    background-color: rgb(255,255,255,.6); 
+    padding: 5px 10px;        
+}
+
+#slippry .left{
+    left: 200px;
+}
+
+#slippry .right{
+    right: 200px;
+}
+#slippry .top_200{
+    top: 200px;
+}
+#slippry .top_250{
+    top: 250px;
+}
+
+#slippry .top_300{
+    top: 300px;
+}
+
+#slippry .top_375{
+    top: 375px;
+}
+
+#slippry .top_400{
+    top: 400px;
+}
+
+#slippry .top_400{
+    top: 450px;
+}
+
+.fa{
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width:800px) {
+    header nav{
+        width: 80%;
+        height: 55%;
+        margin: 8% 0 0 0;
+        position: fixed; 
+        left: -100%;       
+    }
+    header nav ul{
+        width: 100%;
+        margin: 0 0 0 2%;
+        padding: 0;                 
+    }
+
+    header nav ul li{
+        float: none;
+        display: block;
+        width: 80%;        
+    }
+
+    header nav ul li a{
+        text-align: left;
+    }
+
+    .menu_container{
+        padding-top: 15%;
+    }
+
+    .menu_bar{
+        margin-top: 10%;        
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+
+    .menu_bar .bt_menu{
+        display: block;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;        
+    }
+
+} */
